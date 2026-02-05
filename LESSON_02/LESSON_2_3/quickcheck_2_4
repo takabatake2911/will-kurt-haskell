@@ -1,0 +1,6 @@
+main :: IO ()
+main = do
+    let x = "simple"
+    let x = 6
+    print x 
+    -- output: 6
