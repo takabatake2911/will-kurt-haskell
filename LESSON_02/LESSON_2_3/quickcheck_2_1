@@ -1,0 +1,15 @@
+inc :: Int -> Int
+inc x = x + 1
+
+main :: IO ()
+main = do
+    let x = 1
+    let y = inc x
+    print y
+
+-- Note:
+-- Haskell variables are immutable.
+-- You cannot reassign values like in Rust.
+-- Instead of updating x, you create a new name (y) for the new value.
+-- In Rust, `let x = x + 1` is called shadowing.
+-- Haskell does NOT support this kind of shadowing within the same scope.
