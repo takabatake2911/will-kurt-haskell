@@ -1,0 +1,6 @@
+doublePlusTwo x = doubleX + 2
+    where doubleX = x * 2
+
+main :: IO ()
+main = do
+    print $ doublePlusTwo 3
